@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #6ea146;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 25%; 
+    background-color: #d1ffa4;
+    margin-top: 25px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3); 
+}
+
+form {
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #3e6c26;
+    border-radius: 12px;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
+}
+
+#photo{
+    height: 50px;
+    width: 50px;
+    margin: 0px 0px 10px 10px;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+.popup input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.popup button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-animation {
+    opacity: 0;
+    transform: rotate3d(1, .5, .5, 180deg) scale(0.1);
+    transition: all ease-in .4s;
+}
+
+.custom-animation-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.popup {
+    animation: popup-fade-in 0.4s ease-out;
+}
+
+.popup-closing {
+    animation: popup-fade-out 0.4s ease-in forwards;
+}
+
+@keyframes popup-fade-in {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popup-fade-out {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="text-center mb-3">
+        <h1>Login page</h1>
+    </header>
+
+    <form class="row">
+
+        <img src="Sample_User_Icon.png" alt="user_icon" id="photo">
+
+        <div class="col-12">
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" />
+                <label class="form-label" for="form2Example1">User</label>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" />
+                <label class="form-label" for="form2Example2">Password</label>
+            </div>
+
+            <div>
+                <button type="button" data-mdb-button-init data-mdb-ripple-init id="button0" class="btn btn-primary btn-block mb-4">Sign in</button>
+                <button type="button" data-mdb-button-init data-mdb-ripple-init id="button1" class="btn btn-danger btn-block mb-4">Register</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="login.js"></script>
+</body>
+</html>
