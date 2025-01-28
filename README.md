@@ -1,1 +1,1 @@
-Final project for the Web Programming Algorithms course, involving a user authentication system with API and token, while developing user experience concepts.
+Final project for the Web Programming Algorithms course, where I developed a user authentication system using API and token-based authentication. The project focused on enhancing user experience concepts while applying fundamental programming techniques.
